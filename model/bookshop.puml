@@ -1,0 +1,40 @@
+@startuml
+hide circle
+skinparam classAttributeIconSize 0
+skinparam monochrome true
+
+
+class BookshopClient {
+ +get_books()
+ +get_book(isbn:int)
+ +create_book()
+ +update_book()
+ +delete_book(isbn:int)
+}
+
+class BookshopService {
+ +get_books()
+ +get_book(isbn:int)
+ +create_book()
+ +update_book()
+ +delete_book(isbn:int)
+}
+
+class Bookshop {
+ +get()
+ +add_book(book:Book)
+ +delete_book(isbn:int)
+}
+
+class Book {
+ +isbn
+ +title
+ +author
+ +price
+}
+
+BookshopClient -down[dotted]-> BookshopService : calls
+BookshopService .right.> Bookshop : depends on
+Bookshop "1" -right-> "*" Book : "       "
+
+@enduml

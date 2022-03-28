@@ -52,12 +52,16 @@ The code for this example is in [code/bookshop_service.py](code/bookshop_service
 
 Copied from <https://github.com/johnehunt/advancedpython3/tree/main/chapter39>
 
+## UML diagram
+
+![bookshop.png](bookshop.png)
+
 ## EXERCISE
 
-Run the bookshop service on your PC.  You will need the Flask library. Use ```pip install flask```
+1. Run the bookshop service on your PC.  You will need the Flask library. Use ```pip install flask```
 
-You can do some initial tests with your web browser, e.g. visit <http://127.0.0.1:5000/book/list>
+ * You can do some initial tests with your web browser, e.g. visit <http://127.0.0.1:5000/book/list>
 
-To make full use of the API you will need to write a client.
+ * To make full use of the API you will need to write a client.
 
-Design, and write a suitable client that can test all the API end-points.
+2. Design, and write a suitable client that can test all the API end-points.
